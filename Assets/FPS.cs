@@ -8,7 +8,7 @@ public class FPS : MonoBehaviour
 
     void Start() {
         // VR requires a higher FPS than 60 so this is subject to change
-        Application.targetFrameRate = 60;
+        // Application.targetFrameRate = 60;
     }
 
     void Update()

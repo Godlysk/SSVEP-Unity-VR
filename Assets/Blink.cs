@@ -19,7 +19,7 @@ public class Blink : MonoBehaviour
     {   
         Label = this.gameObject.transform.GetChild(0).gameObject;
         Background = this.gameObject.transform.GetChild(1).gameObject;
-        Label.GetComponent<TextMesh>().text = frequency + "Hz";
+        // Label.GetComponent<TextMesh>().text = frequency + "Hz";
         Background.SetActive(active);
         period = 1.0f / frequency;
         timer = 0.0f;
