@@ -16,15 +16,26 @@ public class SocketClient : MonoBehaviour
         ws.Send("Initializing Connection.");
         ws.OnMessage += (sender, e) =>
         {
-            Debug.Log("Message Received From: " + ((WebSocket)sender).Url + ", Data : " + e.Data);
+            Debug.Log("Message From " + ((WebSocket) sender).Url);
+            ReceiveMessage(e.Data);
         };
+    }
+
+    void SendMessage(string message) {
+        ws.Send(message);
+    }
+
+    void ReceiveMessage(string message) {
+        // When a message is received update the UI and then send an acknowledgement that the UI has been updated
+        Debug.Log(message);
+        SendMessage("Received");
     }
 
     // Update is called once per frame
     void Update()
     {
         if(ws == null) return;
-        if (Input.GetKeyDown(KeyCode.Space))
-            ws.Send("Hello World!");
+        // if (Input.GetKeyDown(KeyCode.Space))
+        //     ws.Send("Hello World!");
     }
 }
