@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Container
+  - Label0
+  - Label1
+  - Label2
+  - Label3
+  - Label4
+  - Textbox
   layers:
   - Default
   - TransparentFX

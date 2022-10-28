@@ -2,24 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using WebSocketSharp;
 
 public class Transitions : MonoBehaviour
 {
 
     string sentence = "";
-    public GameObject[] labels;
-    public GameObject output;
+    GameObject[] labels;
+    GameObject output;
 
     int phase = 0;
 
     string[] main = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", ". , ?\n! & :\n; - ←", "A B C\nD E F\nG H I", "J K L\nM N O\nP Q R", "S T U\nV W X\nY Z _"};
     string[] predictive = new string[] {"Other\nPredictions", "Go\nBack", "First", "Second", "Third"};
-    string[] layout = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", "Go\nBack", "Option 1", "Option 2", "Option 3"};
+    public string[] layout = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", "Go\nBack", "Option 1", "Option 2", "Option 3"};
 
     // Start is called before the first frame update
     void Start()
     {
         layout = main;
+        labels = new GameObject[5];
+        GetLabels();
         UpdateLayout();
     }
 
@@ -33,7 +36,13 @@ public class Transitions : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha5)) MakeTransition(4);
     }
 
-    void MakeTransition(int choice) {
+    public void GetLabels() {
+        output = GameObject.FindGameObjectWithTag("Textbox");
+        for (int i=0; i<labels.Length; i++)
+            labels[i] = GameObject.FindGameObjectWithTag("Label" + i);
+    }
+
+    public void MakeTransition(int choice) {
         switch(choice) {
             case 0:
                 layout = predictive;
@@ -69,23 +78,27 @@ public class Transitions : MonoBehaviour
         UpdateLayout();
     }
 
-    void SetLayout(int choice, char delimiter) {
+    public void SetLayout(int choice, char delimiter) {
         string[] values = layout[choice].Split(delimiter);
         layout = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", "Go\nBack", values[0], values[1], values[2]};
     }
 
-    void UpdateLayout() {
+    public void UpdateLayout() {
         for (int i=0; i<layout.Length; i++) {
             labels[i].GetComponent<TextMesh>().text = layout[i];
         }
     }
 
-    void OutputValue(string value) {
+    public void OutputValue(string value) {
         if (value.Equals("←")) {
             if (sentence.Length > 0)
                 sentence = sentence.Remove(sentence.Length - 1);
         } else if (value.Equals("_")) sentence += " ";
         else sentence += value;
         output.GetComponent<TextMesh>().text = sentence;
+    }
+
+    void GetPredictions() {
+        
     }
 }
