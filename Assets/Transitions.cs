@@ -13,9 +13,10 @@ public class Transitions : MonoBehaviour
 
     int phase = 0;
 
-    string[] main = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", ". , ?\n! & :\n; - ←", "A B C\nD E F\nG H I", "J K L\nM N O\nP Q R", "S T U\nV W X\nY Z _"};
+    string[] main = new string[] {"Predictive\nPredictive\nPredictive", ". , ?\n! & :\n; - ←", "A B C\nD E F\nG H I", "J K L\nM N O\nP Q R", "S T U\nV W X\nY Z _"};
     string[] predictive = new string[] {"Other\nPredictions", "Go\nBack", "First", "Second", "Third"};
-    public string[] layout = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", "Go\nBack", "Option 1", "Option 2", "Option 3"};
+    string[] predictions = new string[] {"First", "Second", "Third"};
+    public string[] layout = new string[] {"Predictive\nPredictive\nPredictive", "Go\nBack", "Option 1", "Option 2", "Option 3"};
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +81,7 @@ public class Transitions : MonoBehaviour
 
     public void SetLayout(int choice, char delimiter) {
         string[] values = layout[choice].Split(delimiter);
-        layout = new string[] {"Predictive\nPredictive\nPredictive\nPredictive", "Go\nBack", values[0], values[1], values[2]};
+        layout = new string[] {String.Join('\n', predictions), "Go\nBack", values[0], values[1], values[2]};
     }
 
     public void UpdateLayout() {
@@ -98,7 +99,8 @@ public class Transitions : MonoBehaviour
         output.GetComponent<TextMesh>().text = sentence;
     }
 
-    void GetPredictions() {
-        
+    void SetPredictive(string[] modelOutput) {
+        predictions = modelOutput;
+        main[0] = String.Join('\n', predictions);
     }
 }

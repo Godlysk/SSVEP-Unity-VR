@@ -159,14 +159,13 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5CDA78F29CBC4A98055BCDCBFACAB74049190E7D
 IL2CPP_EXTERN_C String_t* _stringLiteral6690D47161AD994D7444F97612BB1398972AD010;
 IL2CPP_EXTERN_C String_t* _stringLiteral72F2BD32F0F566D89A8A64EA2B9DF33E23D67512;
 IL2CPP_EXTERN_C String_t* _stringLiteral743FF3E9303AAA51ED2B08516D6CDD1C0AE91839;
+IL2CPP_EXTERN_C String_t* _stringLiteral786BB1B502481073F45BF74877093670CFDA8261;
 IL2CPP_EXTERN_C String_t* _stringLiteral7879F4B2CB8844539562F289E9332768B31B94A9;
 IL2CPP_EXTERN_C String_t* _stringLiteral887E9B6AF7604BCDC57F8FC1D0E3043AC03E564D;
 IL2CPP_EXTERN_C String_t* _stringLiteral899C4CA9F8694026FA5B50E67227A4F3E06AC520;
 IL2CPP_EXTERN_C String_t* _stringLiteral97EA7A011F3375ED2693E5FD5A6B3B3A4540D763;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C81C866B759375272284C033A9149A8B017962E;
 IL2CPP_EXTERN_C String_t* _stringLiteralAFB6609BA4BB197C0E8478C66EA56C79C3CA1D93;
-IL2CPP_EXTERN_C String_t* _stringLiteralB3CA5033F9F4CC8909C704BC3E6BDC7A7991A427;
-IL2CPP_EXTERN_C String_t* _stringLiteralB538E56335D8A6CB0437C5D4D0D055E568EB8ACD;
 IL2CPP_EXTERN_C String_t* _stringLiteralC23E3077379AD89DBBDF52790D3E9F3B772D6A0A;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralE4C948AF092F5A9875DA97B205AE55E4520EB95C;
@@ -944,8 +943,6 @@ inline Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* GameObject_GetComp
 {
 	return ((  Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
-// System.Void Transitions::MakeTransition(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transitions_MakeTransition_mE0B3C11F25A869A1ED25F6201ED3EE3C1FA335D4 (Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* __this, int32_t ___choice0, const RuntimeMethod* method) ;
 // T[] System.Array::Empty<System.String>()
 inline StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline (const RuntimeMethod* method)
 {
@@ -972,6 +969,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_m273CA1A9C7717C99641291A9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.Void SocketClient::SendMessage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocketClient_SendMessage_m53CF632D0C7703244CE28A8331138F6DCABCDBC3 (SocketClient_t65C91E5724A362FA6C9EAD9581C0DDE456450010* __this, String_t* ___message0, const RuntimeMethod* method) ;
+// System.Void Transitions::MakeTransition(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transitions_MakeTransition_mE0B3C11F25A869A1ED25F6201ED3EE3C1FA335D4 (Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* __this, int32_t ___choice0, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.MessageEventArgs::get_Data()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MessageEventArgs_get_Data_m68CD4A6A914A8493DC327848521DA18278C1D8C4 (MessageEventArgs_tAA9D7AC324337F7494A3084C3A2E5ECA24AA6BD4* __this, const RuntimeMethod* method) ;
 // System.Void SocketClient::ReceiveMessage(System.String)
@@ -1187,10 +1186,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocketClient_Start_m5126F050F99B53ACA20E
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTransitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E_m8C1532703B5969419B4B8EC8B11A8164FC2A5826_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocketClient_U3CStartU3Eb__4_0_mFFDC5704036AE8584B0ACB5D40620897F97F6FDF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral786BB1B502481073F45BF74877093670CFDA8261);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7879F4B2CB8844539562F289E9332768B31B94A9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral899C4CA9F8694026FA5B50E67227A4F3E06AC520);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C81C866B759375272284C033A9149A8B017962E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB538E56335D8A6CB0437C5D4D0D055E568EB8ACD);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -1202,47 +1201,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocketClient_Start_m5126F050F99B53ACA20E
 		L_1 = GameObject_GetComponent_TisTransitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E_m8C1532703B5969419B4B8EC8B11A8164FC2A5826(L_0, GameObject_GetComponent_TisTransitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E_m8C1532703B5969419B4B8EC8B11A8164FC2A5826_RuntimeMethod_var);
 		__this->___script_4 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___script_4), (void*)L_1);
-		// script.MakeTransition(2);
-		Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* L_2 = __this->___script_4;
-		NullCheck(L_2);
-		Transitions_MakeTransition_mE0B3C11F25A869A1ED25F6201ED3EE3C1FA335D4(L_2, 2, NULL);
-		// ws = new WebSocket("ws://0.tcp.ngrok.io:16834");
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3;
-		L_3 = Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline(Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_4 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_4, _stringLiteralB538E56335D8A6CB0437C5D4D0D055E568EB8ACD, L_3, NULL);
-		__this->___ws_5 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_4);
+		// ws = new WebSocket("wss://localhost:8000");
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2;
+		L_2 = Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline(Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_3 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_3, _stringLiteral786BB1B502481073F45BF74877093670CFDA8261, L_2, NULL);
+		__this->___ws_5 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_3);
 		// Debug.Log("Socket Client Started");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral9C81C866B759375272284C033A9149A8B017962E, NULL);
-		// script.MakeTransition(2);
-		Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* L_5 = __this->___script_4;
-		NullCheck(L_5);
-		Transitions_MakeTransition_mE0B3C11F25A869A1ED25F6201ED3EE3C1FA335D4(L_5, 2, NULL);
 		// ws.Connect();
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_5;
-		NullCheck(L_6);
-		WebSocket_Connect_m55D00EB93E84FA7C6A7655B46F54630D1A0167B5(L_6, NULL);
-		// script.MakeTransition(2);
-		Transitions_t0424C070C66420EF6ED8BC27256FB9C274C5DD9E* L_7 = __this->___script_4;
-		NullCheck(L_7);
-		Transitions_MakeTransition_mE0B3C11F25A869A1ED25F6201ED3EE3C1FA335D4(L_7, 2, NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_4 = __this->___ws_5;
+		NullCheck(L_4);
+		WebSocket_Connect_m55D00EB93E84FA7C6A7655B46F54630D1A0167B5(L_4, NULL);
 		// ws.Send("Initializing Connection");
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_8 = __this->___ws_5;
-		NullCheck(L_8);
-		WebSocket_Send_mE275781E5A051D124CA6603C6DDF357E777DF3D1(L_8, _stringLiteral7879F4B2CB8844539562F289E9332768B31B94A9, NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_5 = __this->___ws_5;
+		NullCheck(L_5);
+		WebSocket_Send_mE275781E5A051D124CA6603C6DDF357E777DF3D1(L_5, _stringLiteral7879F4B2CB8844539562F289E9332768B31B94A9, NULL);
 		// ws.OnMessage += (sender, e) =>
 		// {
 		//     ReceiveMessage(e.Data);
 		// };
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_9 = __this->___ws_5;
-		EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9* L_10 = (EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9*)il2cpp_codegen_object_new(EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9_il2cpp_TypeInfo_var);
-		NullCheck(L_10);
-		EventHandler_1__ctor_mBFF738C5B4A324ADE86116FCFB14BEBD465E278C(L_10, __this, (intptr_t)((void*)SocketClient_U3CStartU3Eb__4_0_mFFDC5704036AE8584B0ACB5D40620897F97F6FDF_RuntimeMethod_var), NULL);
-		NullCheck(L_9);
-		WebSocket_add_OnMessage_m958CB5E0C0A476F4D5AC753E1351F359717B4815(L_9, L_10, NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_5;
+		EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9* L_7 = (EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9*)il2cpp_codegen_object_new(EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		EventHandler_1__ctor_mBFF738C5B4A324ADE86116FCFB14BEBD465E278C(L_7, __this, (intptr_t)((void*)SocketClient_U3CStartU3Eb__4_0_mFFDC5704036AE8584B0ACB5D40620897F97F6FDF_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
+		WebSocket_add_OnMessage_m958CB5E0C0A476F4D5AC753E1351F359717B4815(L_6, L_7, NULL);
 		// }
 		return;
 	}
@@ -1311,7 +1298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocketClient_Update_m3B137D3B9D74E335C19
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB3CA5033F9F4CC8909C704BC3E6BDC7A7991A427);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral786BB1B502481073F45BF74877093670CFDA8261);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -1323,12 +1310,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocketClient_Update_m3B137D3B9D74E335C19
 		}
 	}
 	{
-		// ws = new WebSocket("ws://localhost:8000");
+		// ws = new WebSocket("wss://localhost:8000");
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1;
 		L_1 = Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline(Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
 		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_2 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
-		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_2, _stringLiteralB3CA5033F9F4CC8909C704BC3E6BDC7A7991A427, L_1, NULL);
+		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_2, _stringLiteral786BB1B502481073F45BF74877093670CFDA8261, L_1, NULL);
 		__this->___ws_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_2);
 		// ws.Connect();

@@ -15,7 +15,7 @@ public class SocketClient : MonoBehaviour
     void Start()
     {   
         script = GameObject.FindGameObjectWithTag("Container").GetComponent<Transitions>();
-        ws = new WebSocket("ws://localhost:8000");
+        ws = new WebSocket("wss://localhost:8080");
         Debug.Log("Socket Client Started");
         ws.Connect();
         ws.Send("Initializing Connection");
@@ -31,17 +31,24 @@ public class SocketClient : MonoBehaviour
     }
 
     void ReceiveMessage(string message) {
-        choice = int.Parse(message) - 1;
-        Debug.Log("Message received: " + choice);
-        updateNeeded = true;
-        SendMessage("Updated");
+        if (message.Length == 1) {
+            choice = int.Parse(message) - 1;
+            Debug.Log("Message received: " + choice);
+            updateNeeded = true;
+            SendMessage("Updated");
+        } else {
+            string[] predictions = message.Split(',');
+            if (predictions.Length == 3) {
+                script.SetPredictive(predictions);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         if(ws == null) {
-            ws = new WebSocket("ws://ce07-129-236-174-83.ngrok.io");
+            ws = new WebSocket("wss://localhost:8080");
             ws.Connect();
             return;
         }
