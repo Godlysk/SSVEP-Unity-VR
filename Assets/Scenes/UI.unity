@@ -577,6 +577,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Label0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058113026486461318, guid: b908f72c5d13a4db099a240ac0617a37, type: 3}
+      propertyPath: m_Text
+      value: 'Predictive
+
+        Predictive
+
+        Predictive'
+      objectReference: {fileID: 0}
     - target: {fileID: 3058113026525751146, guid: b908f72c5d13a4db099a240ac0617a37, type: 3}
       propertyPath: m_TagString
       value: Label3

@@ -81,7 +81,7 @@ public class Transitions : MonoBehaviour
 
     public void SetLayout(int choice, char delimiter) {
         string[] values = layout[choice].Split(delimiter);
-        layout = new string[] {String.Join('\n', predictions), "Go\nBack", values[0], values[1], values[2]};
+        layout = new string[] {"Predictive\nPredictive\nPredictive" /*String.Join('\n', predictions)*/, "Go\nBack", values[0], values[1], values[2]};
     }
 
     public void UpdateLayout() {
@@ -99,8 +99,8 @@ public class Transitions : MonoBehaviour
         output.GetComponent<TextMesh>().text = sentence;
     }
 
-    void SetPredictive(string[] modelOutput) {
+    public void SetPredictive(string[] modelOutput) {
         predictions = modelOutput;
-        main[0] = String.Join('\n', predictions);
+        // main[0] = String.Join('\n', predictions);
     }
 }
